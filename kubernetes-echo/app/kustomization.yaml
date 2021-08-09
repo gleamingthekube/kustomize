@@ -1,0 +1,3 @@
+resources:
+  - echo-service.yaml
+  - echo-deployment.yaml
