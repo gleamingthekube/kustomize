@@ -5,5 +5,10 @@ patches:
 configMapGenerator:
   - name: config
     behavior: replace
-    envs: 
-      - config/.env
+    # envs: 
+    #   - config/.env
+    # files:
+    #   - config/config.yaml
+    literals:
+      - username=gtk
+      - password=secret
