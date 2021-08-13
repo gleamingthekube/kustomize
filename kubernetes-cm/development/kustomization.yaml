@@ -1,0 +1,9 @@
+bases: 
+  - ../app
+patches:
+  - image.yaml
+configMapGenerator:
+  - name: config
+    behavior: replace
+    envs: 
+      - config/.env

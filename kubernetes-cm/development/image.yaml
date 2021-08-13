@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echo
+spec:
+  template:
+     spec:
+      containers:
+      - image: gcr.io/kubernetes-e2e-test-images/echoserver:2.1
+        name: echo
+---
+# apiVersion: v1
+# kind: Secret
+# metadata:
+#   name: secretinfo
+# type: Opaque
+# data:
+#   username: YWRtaW4=
+#   password: Z3Rr
+
+
+#   kubectl create secret docker-registry my-secret --docker-server=DOCKER_REGISTRY_SERVER --docker-username=DOCKER_USER
+# --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL
