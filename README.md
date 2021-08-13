@@ -17,8 +17,8 @@ A set of sample kustomize files.
 
  </td>
  <tr>
-<td><a href="https://github.com/gleamingthekube/kustomize/tree/main/kubernetes-cm">Kubernetes ConfigMap</a></td>
-<td>A simple echo service and deployment using Kustomize to change the image version and ConfigMap data.</td>
+<td><a href="https://github.com/gleamingthekube/kustomize/tree/main/kubernetes-cm">Kubernetes Configuration Management</a></td>
+<td>A simple echo service and deployment using Kustomize to change the image version and Configuration data (ConfigMaps and Secrets).</td>
  <td></td>
 
  </td>
