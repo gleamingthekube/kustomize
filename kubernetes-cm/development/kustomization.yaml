@@ -1,14 +1,19 @@
-bases: 
+resources: 
   - ../app
 patches:
   - image.yaml
 configMapGenerator:
   - name: config
     behavior: replace
-    # envs: 
-    #   - config/.env
+    envs: 
+      - config/.env
+secretGenerator:
+  - name: db-creds
+    behavior: replace
+    envs:
+      - config/secret.env
     # files:
     #   - config/config.yaml
-    literals:
-      - username=gtk
-      - password=secret
+    # literals:
+    #   - username=gtk
+    #   - password=secret
